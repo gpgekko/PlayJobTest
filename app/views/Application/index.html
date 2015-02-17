@@ -1,0 +1,8 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{list items:play.configuration.entrySet()}
+	${_.getKey()}: ${_.getValue()}<br>
+#{/list}
+
+#{welcome /}
